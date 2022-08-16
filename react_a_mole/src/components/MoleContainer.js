@@ -1,16 +1,15 @@
 import {useState} from 'react';
-//import Empty from './Empty';
-//import Mole from './Mole';
-
+import Empty from './Empty';
+import Mole from './Mole';
 
 
 export default function MoleContainer (props) {
     const [isShowing, setIsShowing] = useState(false);
    
-
    const handleMoleClicked = () => {
     if (isShowing) {
         props.addToScore(1);
+        setIsShowing (false);
     }
    }
    
@@ -23,3 +22,4 @@ export default function MoleContainer (props) {
         }
         </div>
 }
+

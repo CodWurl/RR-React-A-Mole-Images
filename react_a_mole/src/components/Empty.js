@@ -1,4 +1,6 @@
 import moleHill from '../embedded/molehill.png';
+import {useEffect} from 'react';
+
 
 export default function Empty (props) {
     useEffect(() => {
